@@ -1,0 +1,45 @@
+@import url('https://fonts.google.com/specimen/Muli?selection.family=Muli');
+
+:root{
+    --ff-body: 'Muli', Regular , sans-serif;
+    --fw-body: 300;
+    --fw-bold: 800;
+    --bg-main: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+html, body  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: var(--bg-main);
+    border-top: 5px solid #435757;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-body);
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 480px) {
+    html, body{
+            max-height: 100%;
+    }
+}
+
+@-ms-viewport{
+    width: device-width;
+}

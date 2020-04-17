@@ -1,0 +1,211 @@
+
+
+:root{
+    --color-main-login: #38d39f;
+    --color-font-custom: #333333;
+}
+
+.login{
+    margin-top: 15%;
+    font-family: var(--font-login);
+}
+
+.login form{
+	width: 360px;
+}
+
+.login .title {
+    text-align: end;
+    margin-top: 1vh;
+}
+
+.login .welc {
+    opacity: 0.8;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color: var(--color-font-custom);
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.login .i{
+	color: var(--color-font-custom);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login .i i{
+	transition: .3s;
+}
+
+.input-div > .div{
+    position: relative;
+	height: 45px;
+}
+
+.div > h5{
+	position: absolute;
+	left: 10px;
+    margin-bottom: 18vh;
+	transform: translateY(-50%);
+	color: var(--color-font-custom);
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-main-login);
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > .div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: var(--color-main-login);
+}
+
+.input-div > .div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: var(--color-font-custom);
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+}
+
+.login form a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: var(--color-font-custom);
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+.login a:hover{
+	color: #38d39f;
+}
+
+.btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+	background-size: 200%;
+	font-size: 1.2rem;
+    color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
+.btnG{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+    font-size: 1.2rem;
+    border: 2px solid var(--color-main-login);
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding-top: 10px;
+	margin: 1rem 0;
+	cursor: pointer;
+    transition: .5s;
+    box-shadow:
+        -8px -4px 8px 0px #ffffff,
+        8px 4px 12px 0px #d1d9e6,
+        4px 4px 4px 0px #d1d9e6 inset,
+        -4px -4px 4px 0px #ffffff inset;
+}
+
+.btn:hover{
+	background-position: right;
+}
+
+.create a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-main-login);
+}
+
+.bottom-form {
+    width: 360px;
+}
+
+.bottom-form h6 a {
+	text-decoration: none;
+    list-style: none;
+	color: var(--color-main-login);	
+	margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.login{
+        margin-top: 5%;
+    }
+}
